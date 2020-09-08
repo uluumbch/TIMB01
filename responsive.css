@@ -12,7 +12,36 @@
        margin-top: 10px;
        width: 100%;
     }
-    .container{
+    .container-contact{
         margin: 8px;
+    }
+    .konten-news {
+        width: 70%;
+        height: 170px;
+        margin-bottom: 30px;
+    }
+    .f {
+        padding-bottom: 32px;
+    }
+    .b {
+        padding-bottom: 38px;
+        ;
+    }
+    .panah p {
+        display: none;
+    }
+    .news-wrapper {
+        height: 1380px;
+    }
+    
+}
+
+@media(max-width: 1000px) {
+    .news-wrapper {
+        height: 680px;
+    }
+    .konten-news {
+        width: 40%;
+        margin: 5px auto 20px;
     }
 }
