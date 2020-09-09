@@ -4,37 +4,95 @@
     padding: 0;
     font-family: Helvetica;
 }
+/*Bagian Header */
+.container {
+  width: 80%;
+  margin: auto;
+}
+header {
+  position: fixed;
+  height: 50px;
+  width: 100%;
+  z-index: 10;
+  background-color: #eefbff;
+}
+.menu-icon {
+  color: black;
+  float: right;
+  font-size: 25px;
+  display: none;
+  line-height: 45px;
+  padding-right: 30px;
+}
+.header-logo {
+  font-size: 17px;
+  /* padding-left: 150px; */
+  float: left;
+  line-height: 50px;
+}
+.header-logo h1 {
+    color: black;
+    display: inline-block;
+    text-decoration: none;
+    font-family: helvetica;
+    font-weight: bold;
+}
+.header-menu {
+  float: right;
+}
+.header-menu li {
+  float: left;
+  list-style: none;
+  padding-right: 30px;
+  display: block;
+  line-height: 50px;
+  font-weight: bold;
+}
+.header-menu a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+/*Bagian news*/
 #contact{
     background-color: #eefbff;
     overflow: auto;
-    padding-top: 20px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 #contact h1{
     text-align: center;
-    font: 30px/50px normal Arial;
+    font: 20px bold;
+    font-family: Helvetica;
+    font-weight: bold;
+    padding-bottom: 20px;
 }
 .container-contact{
     margin-left: 25%;
     margin-right: 25%;
 }
 input[type=text],input[type=email]{
-    border-radius: 4px;
-    border: 2px solid #ccc;
+    border-radius: 10px;
+    border: 1px solid #ccc;
     background-color: #f8f8f8;
     width: 100%;
     height: 40px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    outline: none;
+    padding: 0 20px;
 }
 textarea {
     width: 100%;
     height: 150px;
     padding: 12px 20px;
     box-sizing: border-box;
-    border: 2px solid #ccc;
-    border-radius: 4px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
     background-color: #f8f8f8;
     resize: none;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    outline: none;
   }
   input[type=submit]{
     background-color: #6c63ff;
@@ -48,6 +106,10 @@ textarea {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     margin-top: 10px;
     float: right;
+  }
+  form p {
+    padding: 6px 0;
+    font-size: 12px;
   }
   .news-wrapper {
     width: 100%;
@@ -76,7 +138,6 @@ textarea {
     /* background: -moz-linear-gradient(45deg, #FFFDFA 0%, #F5F5F5 50%, #FFFDFA 100%);
     background: -webkit-linear-gradient(45deg, #FFFDFA 0%, #F5F5F5 50%, #FFFDFA 100%);
     background: linear-gradient(45deg, #FFFDFA 0%, #F5F5F5 50%, #FFFDFA 100%); */
-    box-shadow: 0 0 4px 1px rgba(26, 25, 25, 0.2), 0 0 8px 2px rgba(86, 107, 224, 0.35), 0 0 10px 5px rgba(218, 222, 241, 0.35);
     cursor: pointer;
 }
 
@@ -93,7 +154,7 @@ textarea {
 .konten-news h2 {
     font: 18px/24px helvetica;
     padding: 15px 20px 0;
-    color: rgb(27, 25, 27);
+    color: #423f54;
     font-weight: bold;
 }
 
@@ -101,11 +162,12 @@ textarea {
     padding: 10px 20px;
     font-size: 15px;
     text-align: justify;
+    color: #423f54;
 }
 
 .konten-news a {
     text-decoration: none;
-    color: rgb(209, 67, 31);
+    color: #423f54;
 }
 
 .panah i {
@@ -124,6 +186,7 @@ textarea {
     -webkit-transform: scale(1.08);
     transform: scale(1.1);
     transition: 0.3s;
+    box-shadow: 0 0 4px 3px rgba(0, 0, 0, 0.1);
 }
 
 .panah p {
@@ -139,4 +202,45 @@ textarea {
 
 .panah i:hover {
     opacity: 0.5;
+}
+/*Bagian Footer*/
+footer {
+  height: 220px;
+  width: 100%;
+  background-color: #1a3a60;
+  color: #fff;
+  bottom: 0;
+  padding-top: 50px;
+}
+footer nav {
+  width: 80%;
+  margin: auto;
+}
+
+.listing {
+  width: 33.3%;
+}
+.footer-list {
+  float: left;
+}
+.footer-list a {
+  text-decoration: none;
+  color: white;
+}
+.footer-list h2 {
+  margin-bottom: 20px;
+  /* padding-bottom: 20px; */
+  /* padding-left: 40px; */
+}
+.footer-list ul {
+  margin: 0;
+  padding: 0;
+}
+.footer-list li {
+  padding-bottom: 5px;
+  list-style: none;
+}
+.footer-list3 li {
+  float: left;
+  padding-right: 20px;
 }
