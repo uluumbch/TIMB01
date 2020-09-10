@@ -33,6 +33,30 @@
     .news-wrapper {
         height: 1330px;
     }
+    .top-wrapper {
+      width: 100%;
+      height: 320px;
+      background-image: url("gambar/top-background.png");
+      background-size: cover;
+    }
+    .top-wrapper img {
+      height: 280px;
+      width: auto;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      padding-top: 20px;
+      position: absolute;
+      left: 10%;
+      right: 10%;
+      margin-top: 100px;
+    }
+    .top-wrapper h1 {
+      text-align:center;
+      position: relative;
+      padding-top: 90px;
+      font-size: 27px;
+    }
     header {
       position: fixed;
       height: 45px;
@@ -200,5 +224,28 @@
     }
     .prevent-icon {
       margin: 50px 10px;
+    }
+    .top-wrapper {
+      width: 100%;
+      height: 400px;
+      background-image: url("gambar/top-background.png");
+      background-size: cover;
+    }
+    .top-wrapper img {
+      height: 510px;
+      width: auto;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      padding-top: 20px;
+      position: absolute;
+      left: 20%;
+      right: 20%;
+      margin-top: 20px;
+    }
+    .top-wrapper h1 {
+      text-align:center;
+      position: relative;
+      padding-top: 90px;
     }
 }
