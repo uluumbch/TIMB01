@@ -31,7 +31,7 @@
         display: none;
     }
     .news-wrapper {
-        height: 1280px;
+        height: 1330px;
     }
     header {
       position: fixed;
@@ -104,11 +104,17 @@
     #list3 {
       padding-top: 30px;
     }
+    .isi-prevent {
+      flex-wrap: wrap;
+    }
+    .muncul .close {
+      right: 15%;
+    }
 }
 
 @media (min-width: 681px) and (max-width: 1024px) {
     .news-wrapper {
-        height: 680px;
+        height: 730px;
     }
     .konten-news {
         width: 40%;
@@ -191,5 +197,8 @@
     }
     #list3 {
       padding-top: 30px;
+    }
+    .prevent-icon {
+      margin: 50px 10px;
     }
 }

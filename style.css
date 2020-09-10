@@ -53,6 +53,117 @@ header {
   color: black;
   font-weight: bold;
 }
+/*Bagian top wrapper*/
+.image-top img{
+  width: 75%;
+  height: auto;
+}
+.top-wrapper {
+  width: 100%;
+  height: 420px;
+  background-image: url("gambar/top-background.png");
+  background-size: cover;
+}
+.top-wrapper img {
+  height: 620px;
+  width: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 20px;
+}
+.top-wrapper h1 {
+  text-align:center;
+}
+/*Bagian prevention*/
+.prevent {
+	background-color: #eefbff;
+}
+.judul-prevent {
+	color: #423f54;
+	border-bottom: 1.5px solid #423f54;
+	text-align: center;
+	margin: 0px 75px;
+	padding: 10px 0px;
+}
+.isi-prevent {
+	display: flex;
+	justify-content: center;
+}
+.prevent img {
+	height: 120px;
+	width: 100px;
+}
+.prevent-icon {
+	margin: 55px 50px;
+	background-color: white;
+	text-align: center;
+    padding: 30px;
+    box-sizing: border-box;
+    border-radius: 25px;
+    cursor: pointer;
+
+}
+.prevent-icon:hover {
+	box-shadow:  0px 0px 30px 1px rgba(0,0,0,0.3);
+	opacity: 0,5;
+}
+.prevent-icon p {
+	font-size: 15px;
+	color: #6184c9;
+}
+.prevent a {
+  text-decoration: none;
+  color: #423f54;
+}
+.muncul {
+	width: 0;
+	height: 0;
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	right: 0;
+	background-color: rgba(0,0,0,.3);
+	z-index: 9;
+	cursor: default;
+}
+.muncul:target {
+	height: auto;
+	width: auto;
+    left: 0;
+    bottom: 0;
+    animation: animasi 1s;
+}
+.muncul img {
+	margin-top: 100px;
+	max-height: 100%;
+	height: 400px;
+	width: 350px;
+}
+.muncul p {
+	font-size: 35px;
+	color: white;
+}
+.muncul .close {
+	position: absolute;
+	top: 120px;
+	right: 35%;
+	color: white;
+	font-size: 20px;
+}
+
+/*animasi*/
+@keyframes animasi {
+
+	0% {
+		transform: scale(0);
+		opacity: 0;
+	}
+	100% {
+		transform: scale(1);
+		opacity: 1
+	}
+}
 
 /*Bagian news*/
 #contact{
@@ -114,17 +225,19 @@ textarea {
   .news-wrapper {
     width: 100%;
     background-color: #b9e5ee;
-    height: 500px;
+    height: 540px;
     text-align: center;
 }
 
 .container-news h1 {
     text-align: center;
-    font: 30px/50px normal Arial;
+    font: 30px/50px;
+    font-family: Helvetica;
     color: black;
     /* color: rgba(66, 63, 84, .9);
     border-bottom: 1.5px solid rgb(10, 10, 53); */
     display: inline-block;
+    padding: 30px 0 20px 0;
 }
 
 .konten-news {
